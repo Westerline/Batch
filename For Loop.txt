@@ -1,0 +1,8 @@
+::If the loop contains a single command, you can use the first structure. If the loop requires multiple commands, use the second structure.
+
+For /F "tokens=*" %%A in (.\Temp\Test.txt) Do Echo Test
+
+For /d %%B in (.\Temp\Test.txt) Do (
+Echo Test 1
+Echo Test 2
+)
