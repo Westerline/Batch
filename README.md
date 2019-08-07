@@ -1,4 +1,4 @@
-# Batch Tools Repository
+# Batch Repository
 
 * This repository is a collection of example code for creating batch scripts. Any scripts which use CMD-based tools can be found in my PowerShell repository.
 
