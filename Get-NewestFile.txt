@@ -1,3 +1,0 @@
-::For loop function to order files by date/time using 'dir' and then sets the file with the most recent date/time modified as a variable.
-
-for /f "tokens=*" %%a in ('dir /b /od') do set FILE=%%a

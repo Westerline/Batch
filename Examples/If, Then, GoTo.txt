@@ -1,0 +1,21 @@
+:: Example If, Then, GoTo template.
+
+@Echo On
+If Not Exist .\Temp\Test.txt GoTo Option2
+If Exist .\Temp\Test.txt
+Rename Test-old.txt
+For %%i in (*.dll) do echo DLL Found
+For %%i in (*.mof,*.mfl) do echo MOF/MFL Found 
+GoTo End
+
+:Option1
+If /I (%1) == (wbemcntl.exe) GoTo End
+If /I (%1) == (mofcomp.exe) GoTo End
+%1 /RegServer
+
+:Option2
+If Not Exist wmicore.exe GoTo End
+wmicore /s
+net start winmgmt
+
+:End
