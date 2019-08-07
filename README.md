@@ -4,7 +4,7 @@
 
 ## Getting Started
 
-* Download the repository and copy/paste the required code.
+* Copy/paste the required code.
 
 ### Prerequisites
 
